@@ -1,9 +1,13 @@
 # Go-GQL-POC
 
 
-Go-Gql-POC is  proof of a concept of using Golang with GraphQL.
+Go-Gql-POC is  proof of a concept creating an api using Golang with GraphQL and PostgreSQL as database.
 
 ## Installation
+
+install go 
+install postgresql
+install git
 
 install in terminal using go get "https://github.com/iqbvl/go-gql-poc"  
 
