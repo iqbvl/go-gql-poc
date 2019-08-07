@@ -18,7 +18,7 @@ func main() {
 	router, db := initAPI()
 	defer db.Close()
 	// Listen on port 4000 and if there's an error log it and exit
-	log.Fatal(http.ListenAndServe(":4000", router))
+	log.Fatal(http.ListenAndServe(":8080", router))
 }
 
 func initAPI() (*chi.Mux, *postgres.Db) {
