@@ -1,7 +1,7 @@
 FROM golang:1.12 as goimage
 ENV SRC=/go/src/
 RUN mkdir -p /go/src/
-WORKDIR /go/src/go_docker
+WORKDIR /go/src/go-gql-poc
 RUN git clone -b master — single-branch https://github.com/iqbvl/go-gql-poc /go/src/go-gql-poc/ \
 && CGO_ENABLED=0 GOOS=linux GOARCH=amd64 \
 go build -o bin/go-gql-poc
