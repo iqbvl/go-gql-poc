@@ -15,9 +15,13 @@ import (
 )
 
 func main() {
+
+	// REmark fo r
+
 	router, db := initAPI()
 	defer db.Close()
 	// Listen on port 4000 and if there's an error log it and exit
+	fmt.Println("Listening on port : 8080")
 	log.Fatal(http.ListenAndServe(":8080", router))
 }
 
